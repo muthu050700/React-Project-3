@@ -128,7 +128,7 @@ const AddTask = () => {
             {todoData.length >= 1 && (
               <div className="flex flex-col sm:flex-row sm:justify-between ">
                 <h2 className="mx-4 my-4 font-bold text-xl text-[#EEEEEE] sm:mt-5 sm:text-2xl lg:ml-[120px] ">
-                  My ToDo
+                  My ToDo's
                 </h2>
                 <p className="mx-4 text-left my-4 sm:align-middle  lg:mr-[120px] ">
                   <span className="text-[#EEEEEE]  text-[17px] sm:text-xl ">
