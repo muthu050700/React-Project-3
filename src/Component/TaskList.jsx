@@ -16,10 +16,10 @@ const TaskList = ({
       <div className="flex justify-center my-4 ">
         <div className="w-full mx-2 h-full sm:w-[350px]  bg-[#1b1b1b] flex flex-col gap-4 py-4 sm:gap-6 rounded-lg px-4">
           <h1 className="text-[#EEEEEE] font-medium text-lg sm:font-bold sm:text-xl">
-            Name: {todo}
+            Task-Name : {todo}
           </h1>
           <h2 className="text-[#EEEEEE] font-medium text-lg">
-            Description: {description}
+            Description : {description}
           </h2>
           <p>
             <select
