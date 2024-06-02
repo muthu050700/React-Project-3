@@ -23,7 +23,7 @@ const TaskList = ({
           </h2>
           <p>
             <select
-              className="px-3 py-1 sm:py-2 rounded-lg bg-[#373A40] border-gray-800 text-gray-200 font-bold"
+              className="px-3 py-2 sm:py-2 rounded-lg bg-[#373A40] border-gray-800 text-gray-200 font-bold"
               onChange={handleCompleted}
             >
               {status === "notcompleted"

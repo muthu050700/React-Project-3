@@ -135,7 +135,7 @@ const AddTask = () => {
                     Status filter :
                   </span>
                   <select
-                    className="mx-1 px-2 py-1 sm:py-2 rounded-lg bg-gray-800 border-gray-800 text-gray-200 font-bold"
+                    className="mx-1 px-2 py-2 sm:py-2 rounded-lg bg-gray-800 border-gray-800 text-gray-200 font-bold"
                     onChange={(e) => {
                       setFilter(e.target.value);
                     }}
