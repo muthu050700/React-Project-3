@@ -100,7 +100,7 @@ const AddTask = () => {
           <input
             type="text"
             required
-            className="border border-slate-400 py-2 mb-10 w-full rounded-lg px-2 text-lg bg-slate-200 text-gray-700 font-medium shadow-xl lg:w-[550px] lg:px-3 lg:py-3"
+            className="border border-slate-400 py-2 mb-10 w-full rounded-lg px-2 text-lg bg-slate-200 text-gray-700 font-medium shadow-xl sm:w-[450px] lg:w-[550px] lg:px-3 lg:py-3"
             placeholder="ToDo Name"
             name="todo"
             value={newTitle}
@@ -109,7 +109,7 @@ const AddTask = () => {
           <input
             type="text"
             required
-            className="border border-slate-400  py-2 mb-8 w-full rounded-lg px-2 text-lg bg-slate-200  text-gray-700 font-medium shadow-xl lg:w-[550px] lg:px-3 lg:py-3"
+            className="border border-slate-400  py-2 mb-8 w-full rounded-lg px-2 text-lg bg-slate-200  text-gray-700 font-medium shadow-xl sm:w-[450px]  lg:w-[550px] lg:px-3 lg:py-3"
             placeholder="ToDo Description"
             name="description"
             value={newDescription}
@@ -148,7 +148,7 @@ const AddTask = () => {
               </div>
             )}
           </div>
-          <div className="lg:flex lg:flex-row lg:gap-4 justify-center lg:flex-wrap">
+          <div className="lg:flex lg:flex-row lg:gap-4 justify-center lg:flex-wrap ">
             {todoData.map((val) => {
               if (val.status === filter || filter === "all") {
                 return (
