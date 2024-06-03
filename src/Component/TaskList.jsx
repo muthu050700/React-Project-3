@@ -70,14 +70,14 @@ const TaskList = ({
   );
 };
 
-TaskList.PropTypes = {
+TaskList.propTypes = {
   todo: PropTypes.string,
   description: PropTypes.string,
   id: PropTypes.number,
-  deleteTodo: PropTypes.function,
-  handleForm: PropTypes.function,
+  deleteTodo: PropTypes.func,
+  handleForm: PropTypes.func,
   status: PropTypes.string,
-  handleEdit: PropTypes.function,
+  handleEdit: PropTypes.func,
 };
 
 export default TaskList;
