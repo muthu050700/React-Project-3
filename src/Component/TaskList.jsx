@@ -1,4 +1,4 @@
-import { useState } from "react";
+import PropTypes from "prop-types";
 const TaskList = ({
   todo,
   description,
@@ -11,6 +11,7 @@ const TaskList = ({
   const handleCompleted = (e) => {
     handleForm(e.target.value, id);
   };
+
   return (
     <>
       <div className="flex justify-center my-4 ">
@@ -67,6 +68,16 @@ const TaskList = ({
       </div>
     </>
   );
+};
+
+TaskList.PropTypes = {
+  todo: PropTypes.string,
+  description: PropTypes.string,
+  id: PropTypes.number,
+  deleteTodo: PropTypes.function,
+  handleForm: PropTypes.function,
+  status: PropTypes.string,
+  handleEdit: PropTypes.function,
 };
 
 export default TaskList;
