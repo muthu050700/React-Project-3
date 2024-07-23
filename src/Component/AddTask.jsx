@@ -10,7 +10,6 @@ const AddTask = () => {
   const [filter, setFilter] = useState("all");
   const [editTodo, setEditTodo] = useState(null);
   const deleteTodo = (id) => {
-    console.log(id);
     const temp = todoData.filter((val) => {
       return val.id !== id;
     });
@@ -18,13 +17,11 @@ const AddTask = () => {
     localStorage.setItem("todolistlocal", JSON.stringify(temp));
   };
   const updateForm = (selectedValue, id) => {
-    console.log(selectedValue, id);
     setTodoData(
       todoData.map((value) => {
         if (value.id === id) {
           value.status = selectedValue;
         }
-        console.log(value);
         return value;
       })
     );
@@ -72,7 +69,6 @@ const AddTask = () => {
     setNewDescription(data.description);
   };
   const updatingEditTodo = (todo) => {
-    console.log(todo);
     const todoObj = todo.find((val) => val.id === editTodo);
     const index = todoData.findIndex((val) => val.id === editTodo);
     const temp = [...todoData];
